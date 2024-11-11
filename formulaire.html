@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar"  dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبيان رأي الموقع</title>
+</head>
+<body>
+    <h1>استبيان رأي الموقع</h1>
+    <form action="#" method="post">
+        <label>الاسم الأول:</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label >الاسم العائلة:</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label >تاريخ الميلاد:</label><br>
+        <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+
+        <label >الجنس:</label><br>
+        <input type="radio" id="homme" name="genre" value="ذكر">
+        <label for="homme">ذكر</label><br>
+        <input type="radio" id="femme" name="genre" value="أنثى">
+        <label for="femme">أنثى</label><br><br>
+
+        <label >البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label >المعتمدية / الولاية:</label><br>
+        <select id="gouvernorat" name="gouvernorat" required>
+            <option value="">اختر الولاية</option>
+            <option value="Tunis">تونس</option>
+            <option value="Ariana">أريانة</option>
+            <option value="Ben Arous">بن عروس</option>
+            <option value="Bizerte">بنزرت</option>
+            <option value="Gabès">قابس</option>
+            <option value="Gafsa">قفصة</option>
+            <option value="Jendouba">جندوبة</option>
+            <option value="Kairouan">القيروان</option>
+            <option value="Kasserine">القصرين</option>
+            <option value="Kébili">قبلي</option>
+            <option value="Manouba">منوبة</option>
+            <option value="Médenine">مدنين</option>
+            <option value="Monastir">المنستير</option>
+            <option value="Nabeul">نابل</option>
+            <option value="Sfax">صفاقس</option>
+            <option value="Sidi Bouzid">سيدي بوزيد</option>
+            <option value="Siliana">سليانة</option>
+            <option value="Tataouine">تطاوين</option>
+            <option value="Tozeur">توزر</option>
+            <option value="Zaghouan">زغوان</option>
+        </select><br><br>
+
+        <label >رأيك في الموقع:</label><br>
+        <textarea id="avis" name="avis" rows="4" cols="50" required></textarea><br><br>
+
+        <label >التقييم (من 1 إلى 5):</label><br>
+        <input type="number" id="note" name="note" min="1" max="5" required><br><br>
+
+        <button type="submit">إرسال</button>
+    </form>
+</body>
+</html>
